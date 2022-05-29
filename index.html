@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление студентами</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="app">
+            <h1 class="title">Панель управления студентами</h1>
+            <div class="search__wrapper">
+               <input type="text" class="search" placeholder="Введиде имя студента"> 
+               <button class="btn__search">Поиск</button>
+            </div>
+            <div class="table">
+                <div class="table__item table__name">ФИО студента</div>
+                <div class="table__item table__faculty">Факультет</div>
+                <div class="table__item table__date">Дата рождения</div>
+                <div class="table__item table__education">Год обучения (номер курса)</div>
+            </div>
+        </section>
+        <div class="form__wrapper">
+            <div class="valid__container">
+                <form action="" class="form">
+                    <label class="form__label">
+                        <input class="form__input input input-name" placeholder="ФИО*" type="text" autocomplete="off"
+                            name="name" id="name">
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input input input-faculty" placeholder="Факультет" type="text"
+                            name="faculty" id="faculty">
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input input input-date" placeholder="Дата рождения" type="date"
+                            name="dateBirth" id="dateBirth">
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input input input-education" placeholder="Дата поступления" type="date"
+                            name="dateEdu" id="dateEdu">
+                    </label>
+                    <button class="form__btn btn">Добавить студента</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/just-validate-plugin-date/dist/just-validate-plugin-date.production.min.js"></script>
+    <script src="/node_modules/just-validate/dist/just-validate.production.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
